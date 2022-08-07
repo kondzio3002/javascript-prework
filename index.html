@@ -2,18 +2,45 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kamień, papier, nożyce</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+        <link rel="stylesheet" href="https://use.typekit.net/vvf1suj.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/droid-serif-2">
+        <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/wisdom-script">
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="container">
-            <div id="buttons">
-                <button id="play-rock">Kamień</button>
-                <button id="play-paper">Papier</button>
-                <button id="play-scissors">Nożyce</button>
+        <header class="splash">
+            <img src="/images/Image.jpg" alt="image">
+        </header>
+
+        <section class="instruction">
+            <div class="container">
+                <h3>Wybierz kamień, papier lub nożyce i wygraj z komputerm.</h3>
+                <h2>Powodzenia !</h2>
             </div>
-            <div id="messages"></div>
-        </div>
+        </section>
+
+        <section class="game">
+            <div class="container">
+                <div id="buttons">
+                    <button id="play-rock" type="button">Kamień</button>
+                    <button id="play-paper" type="button">Papier</button>
+                    <button id="play-scissors" type="button">Nożyce</button>
+                </div>
+                <div id="messages"></div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <p>© Konrad Brożyna</p>
+            </div>
+        </footer>
+
         <script src="js/functions.js"></script>
         <script src="js/script.js"></script>
     </body>
