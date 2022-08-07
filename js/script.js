@@ -11,3 +11,5 @@ if(randomNumber == 1){
 } else {
     computerMove = 'nożyce';
 }
+
+printMessage('Mój ruch to: ' + computerMove);
