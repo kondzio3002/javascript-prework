@@ -16,23 +16,14 @@ function playGame(playerInput){
     }
 
     function displayResult(argComputerMove, argPlayerMove){
-        if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
+        if((argComputerMove == 'kamień' && argPlayerMove == 'papier') || (argComputerMove == 'papier' && argPlayerMove == 'nożyce') || (argComputerMove == 'nożyce' && argPlayerMove == 'kamień')) {
             return 'Ty wygrywasz!';
-        } else if(argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
-            return 'Niestety, przegrywasz :(';
-        } else if(argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
-            return 'Ty wygrywasz!';
-        } else if(argComputerMove == 'papier' && argPlayerMove == 'kamień'){
-            return 'Niestety, przegrywasz :(';
-        } else if(argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
-            return 'Ty wygrywasz!';
-        } else if(argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
+        } else if((argComputerMove == 'kamień' && argPlayerMove == 'nożyce') || (argComputerMove == 'papier' && argPlayerMove == 'kamień') || (argComputerMove == 'nożyce' && argPlayerMove == 'papier')){
             return 'Niestety, przegrywasz :(';
         } else if(argComputerMove == argPlayerMove){
             return 'Jest remis';
         } 
-
-            return 'Wystąpił błąd - nieznany ruch'
+            return 'Wystąpił błąd - nieznany ruch';
     }
 
     // Computer Move
@@ -75,4 +66,3 @@ function playScissorsClicked(){
 } 
 let playScissors = document.getElementById('play-scissors'); 
 playScissors.addEventListener('click', playScissorsClicked);
-  
